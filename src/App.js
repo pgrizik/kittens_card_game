@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardList from './CardList'
 import InputBox from './InputBox'
+import Winner from './Winner'
 
 class App extends Component {
 	constructor () {
@@ -8,12 +9,18 @@ class App extends Component {
 		this.state = {
 			robots: [],
 			inputbox: 10,
-		}
+			seen: false
+		};
 		this.i = 0;
 		this.prevCard=null;
 		this.catsleft = 10;
 	}
 
+	  togglePop = () => {
+	   this.setState({
+	    seen: !this.state.seen
+	   });
+	  };
 	componentDidMount () {
 		fetch('https://jsonplaceholder.typicode.com/users')
 			.then(response => response.json())
@@ -62,8 +69,9 @@ class App extends Component {
 						this.catsleft += res[1];
 						// console.log('i=', this.i,'new catsleft', this.catsleft);
 						if (this.catsleft == 0) {
-							window.alert('you won!!!')
-							window.location.reload();
+							// window.alert('you won!!!')
+							this.togglePop()
+							// window.location.reload();
 						}						
 					});
 			}
@@ -104,6 +112,7 @@ class App extends Component {
 						InputChange = {this.onInputChange}
 						onButtonRestart = {this.onButtonRestart}
 					/>
+					{this.state.seen ? <Winner toggle={this.togglePop} /> : null}
 					<CardList 
 						robots = {filteredCats}
 						onButtonFlip = {this.onButtonFlip}
