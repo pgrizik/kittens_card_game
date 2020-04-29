@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0a51c8d65d86f50fb04fc48911f64a1",
+    "revision": "3015583575e257adc2cf3dcc15067cb4",
     "url": "/kittens_card_game/index.html"
   },
   {
-    "revision": "e1ee9cc1dba59d672935",
+    "revision": "2816da0b3edb9225fe2c",
     "url": "/kittens_card_game/static/css/2.66b7f74f.chunk.css"
   },
   {
-    "revision": "601944b222594cda9e5d",
+    "revision": "8c696c34abf046009483",
     "url": "/kittens_card_game/static/css/main.94aaee58.chunk.css"
   },
   {
-    "revision": "e1ee9cc1dba59d672935",
-    "url": "/kittens_card_game/static/js/2.0c1e4e58.chunk.js"
+    "revision": "2816da0b3edb9225fe2c",
+    "url": "/kittens_card_game/static/js/2.5f150c1d.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/kittens_card_game/static/js/2.0c1e4e58.chunk.js.LICENSE.txt"
+    "url": "/kittens_card_game/static/js/2.5f150c1d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "601944b222594cda9e5d",
-    "url": "/kittens_card_game/static/js/main.b0c828ae.chunk.js"
+    "revision": "8c696c34abf046009483",
+    "url": "/kittens_card_game/static/js/main.e502ef1e.chunk.js"
   },
   {
     "revision": "1e58c5dcc7b3c91836d6",
