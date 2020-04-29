@@ -1,0 +1,9 @@
+{
+  "short_name": "Kitten's cards",
+  "name": "Kittens card game",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
